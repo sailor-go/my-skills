@@ -124,5 +124,3 @@ compatibility: "需要配合karpathy-llm-wiki这个skill来使用：https://gith
 ## 最终输出
 
 自检及独立评审通过后，执行 `python <本 skill 路径>/script/compile.py draft.md -o report.md`，生成最终报告。输入输出路径相对于执行命令时的工作目录；默认读取 `draft.md` 并输出 `report.md`。
-
-脚本使用 Python 3 标准库，无额外依赖。它统一换行符、清理正文多余空行，保留引用链接、HTML 表格、代码块及 Markdown 行尾换行语法，不改写内容、不核验来源或判断评审结论。默认拒绝覆盖已有输出；需要重新生成时使用 `--force`。最终交付 `report.md`，并保留草稿和评审材料以便追溯。
